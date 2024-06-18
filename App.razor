@@ -1,0 +1,12 @@
+﻿@using Microsoft.AspNetCore.Components.WebAssembly.Hosting
+@using Microsoft.FluentUI.AspNetCore.Components
+
+<FluentButton Primary="true" OnClick="@HandleButtonClick">Click me!</FluentButton>
+
+@code {
+    private void HandleButtonClick(MouseEventArgs args)
+    {
+        Console.WriteLine("Button clicked!");
+        // You can add more logic here as needed
+    }
+}
